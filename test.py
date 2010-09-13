@@ -14,6 +14,8 @@ print GHRMLTemplate("""
   %body
     %p{'id': 'foo'}
       Hello World
+    #bar
+      dum dum
     %ul
       %li[for item in seq] $item
     ${bar()}
