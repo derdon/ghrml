@@ -201,7 +201,7 @@ class Parser(object):
         """
         Check if a namespace is known to the parser.
 
-        :return: `True` of `False`.
+        :return: `True` or `False`.
         """
         return self.get_namespace(name) is not None
 
