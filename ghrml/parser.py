@@ -395,6 +395,7 @@ class Parser(object):
             tag = self.get_qname(match.group(1))
             pos = match.end()
         else:
+            # FIXME: raises AttributeError when having ``#foo`` in the source
             tag = self.default_tag
             pos = 0
 
