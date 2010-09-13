@@ -35,7 +35,9 @@ class GHRMLTemplate(MarkupTemplate):
         if default_namespace is None:
             default_namespace = self.DEFAULT_NAMESPACE
         self.default_namespace = default_namespace
-        MarkupTemplate.__init__(self, source, basedir=basedir,
+        # FIXME: MarkupTemplate.__init__ does not expect the keyword argument
+        #        'basedir'
+        MarkupTemplate.__init__(self, source, #basedir=basedir,
                                 filename=filename, loader=loader,
                                 encoding=encoding, lookup=lookup,
                                 allow_exec=allow_exec)
