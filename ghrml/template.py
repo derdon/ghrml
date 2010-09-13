@@ -8,7 +8,7 @@
     :copyright: Copyright 2008 by Armin Ronacher.
     :license: BSD.
 """
-from genshi.template.markup import MarkupTemplate, Stream
+from genshi.template.markup import MarkupTemplate#, Stream
 from genshi.core import Namespace
 from ghrml.parser import Parser
 
